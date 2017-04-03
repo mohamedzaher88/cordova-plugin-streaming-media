@@ -4,7 +4,7 @@
 //
 //  Created by StartApp on 9/17/14.
 //  Copyright (c) 2014 StartApp. All rights reserved.
-//  SDK version 3.4.2
+//  SDK version 2.4.0
 
 
 #import <UIKit/UIKit.h>
@@ -22,9 +22,6 @@ typedef enum {
 @interface STANativeAdPreferences : STAAdPreferences
 @property (nonatomic,assign) STANativeAdBitmapSize bitmapSize;
 @property  int adsNumber;
-@property  int primaryImageSize;
-@property  int secondaryImageSize;
-@property  bool contentAd;
 @property  bool autoBitmapDownload;
 
 @end
@@ -43,8 +40,5 @@ typedef enum {
 - (void) loadAdWithDelegate:(id<STADelegateProtocol>) delegate withNativeAdPreferences:(STANativeAdPreferences*) nativeAdPrefs;
 
 - (BOOL) isReady;
-
-- (void)setAdTag:(NSString *)adTag;
-
 
 @end
