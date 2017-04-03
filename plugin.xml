@@ -44,6 +44,18 @@
         <header-file src="src/ios/startapp.h" />
         <source-file src="src/ios/startapp.m" />
 		<resource-file src="src/ios/StartApp.bundle" />
-		<resource-file src="src/ios/StartApp.framework" />
+		
+		<header-file src="src/ios/Headers/STAAbstractAd.h" />
+		<header-file src="src/ios/Headers/STABannerSize.h" />
+		<header-file src="src/ios/Headers/STABannerView.h" />
+		<header-file src="src/ios/Headers/STANativeAdDetails.h" />
+		<header-file src="src/ios/Headers/STASplashPreferences.h" />
+		<header-file src="src/ios/Headers/STAStartAppAd.h" />
+		<header-file src="src/ios/Headers/STAStartAppNativeAd.h" />
+		<header-file src="src/ios/Headers/STAStartAppSDK.h" />
+
+		
+		
+		<resource-file src="src/ios/Headers/StartApp" />
     </platform>
 </plugin>
