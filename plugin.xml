@@ -41,7 +41,6 @@
 		<header-file src="src/ios/Headers/STAStartAppSDK.h" />
 		<header-file src="src/ios/Headers/STAStartAppAdBasic.h" />
 
-		<header-file src="src/ios/Headers/StartApp" />
 		
 		
 
