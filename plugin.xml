@@ -25,21 +25,7 @@
 		<framework src="CoreMedia.framework" />
 		<framework src="AVFoundation.framework" />
 		<framework src="libz.tbd" />
-		
-         <framework src="AudioToolbox.framework" />
-         <framework src="CoreBluetooth.framework" />
-         <framework src="CoreLocation.framework" />
-         <framework src="CoreMotion.framework" />
-         <framework src="CoreVideo.framework" />
-         <framework src="EventKit.framework" />
-         <framework src="EventKitUI.framework" />
-         <framework src="Foundation.framework" />
-         <framework src="GLKit.framework" />
-         <framework src="MediaPlayer.framework" />
-         <framework src="MessageUI.framework" />
-         <framework src="OpenGLES.framework" />
-         <framework src="SafariServices.framework" />
-         <framework src="UIKit.framework" />
+
 		
         <header-file src="src/ios/startapp.h" />
         <source-file src="src/ios/startapp.m" />
@@ -54,8 +40,5 @@
 		<header-file src="src/ios/Headers/STAStartAppNativeAd.h" />
 		<header-file src="src/ios/Headers/STAStartAppSDK.h" />
 
-		
-		
-		<resource-file src="src/ios/Headers/StartApp" />
     </platform>
 </plugin>
