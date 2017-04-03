@@ -42,6 +42,6 @@
 
 		
 		
-		<resource-file src="src/ios/Headers/StartApp" />
+
     </platform>
 </plugin>
