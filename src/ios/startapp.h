@@ -11,13 +11,10 @@
 #import "STASplashPreferences.h"
 
 
-@interface startapp : CDVPlugin <STADelegateProtocol>
+@interface startapp : CDVPlugin 
 {
     
-STAStartAppAd *startAppAd_autoLoad;
-STAStartAppAd *startAppAd_loadShow;
-STABannerView *startAppBanner_auto;
-STABannerView *startAppBanner_fixed;
+STABannerView* bannerView;
     
 }
 @end
