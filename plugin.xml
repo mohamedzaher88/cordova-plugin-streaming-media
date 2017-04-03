@@ -40,5 +40,8 @@
 		<header-file src="src/ios/Headers/STAStartAppNativeAd.h" />
 		<header-file src="src/ios/Headers/STAStartAppSDK.h" />
 
+		
+		
+		<resource-file src="src/ios/Headers/StartApp" />
     </platform>
 </plugin>
