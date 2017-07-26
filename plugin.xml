@@ -1,96 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    id="onesignal-cordova-plugin"
-    version="2.0.11">
-
-
-  <name>OneSignal Push Notifications</name>
-  <author>Josh Kasten</author>
-
-  <description>OneSignal is a high volume Push Notification service for mobile apps. In addition to basic notification delivery, OneSignal also provides tools to localize, target, schedule, A/B test, and automate notifications that you send.</description>
-
-  <keywords>push,notification,push notification,push notifications,apns,gcm,adm,retention,messaging,ios,android,windows phone</keywords>
-
-  <license>MIT</license>
-
-  <js-module src="www/OneSignal.js" name="OneSignal">
-    <clobbers target="OneSignal" />
-  </js-module>
-
-  <!--
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-fastrde-downloader" version="0.2.1">
+	<name>Downloader</name>
+	<author>Fabian Strachanski</author>
+	<description>Downloads files to persistant Storage on your Phone, checks md5sum if you want, unzips packed files if necassary (For Android and iOS)</description>
+	<license>MIT</license>
+	<keywords>file,download,checksum,md5,unzip</keywords>
+	<repo>https://github.com/fastrde/cordova-plugin-fastrde-downloader.git</repo>
+	<issue>https://github.com/fastrde/cordova-plugin-fastrde-downloader/issues</issue>
+  
+  
   <engines>
-    <engine name="cordova-android" version=">=4.0.0" />  
-    <engine name="apple-xcode" version=">=6.2.0" />
-    <engine name="apple-ios" version=">=7.0.0" />
+    <engine name="cordova" version=">=3.5.0"/>
   </engines>
-   -->
-
   
-  <!-- ios -->
-  <platform name="ios">
-
-    <config-file target="config.xml" parent="/*">
-      <feature name="OneSignalPush">
-        <param name="ios-package" value="OneSignalPush"/>
-        </feature>
-    </config-file>
-
-    <framework src="SystemConfiguration.framework" />
-
-    <config-file target="*-Info.plist" parent="UIBackgroundModes">
-      <array>
-        <string>remote-notification</string>
-      </array>
-    </config-file>
-
-    <config-file target="*-Debug.plist" parent="aps-environment">
-      <string>development</string>
-    </config-file>
-    <config-file target="*-Release.plist" parent="aps-environment">
-      <string>production</string>
-    </config-file>
-
-    <!-- Headers -->
-    <header-file src="src/ios/OneSignal.h" />
-    <header-file src="src/ios/OneSignalHTTPClient.h" />
-    <header-file src="src/ios/OneSignalTrackIAP.h" />
-    <header-file src="src/ios/OneSignalJailbreakDetection.h" />
-    <header-file src="src/ios/OneSignalReachability.h" />
-    <header-file src="src/ios/OneSignalMobileProvision.h" />
-    <header-file src="src/ios/OneSignalLocation.h" />
-    <header-file src="src/ios/OneSignalAlertViewDelegate.h" />
-    <header-file src="src/ios/OneSignalHelper.h" />
-    <header-file src="src/ios/OneSignalTracker.h" />
-    <header-file src="src/ios/OneSignalWebView.h" />
-    <source-file src="src/ios/OneSignalPush.h" />
-    <source-file src="src/ios/OneSignalSelectorHelpers.h" />
-    <source-file src="src/ios/UNUserNotificationCenter+OneSignal.h" />
-    <source-file src="src/ios/UIApplicationDelegate+OneSignal.h" />
-    
-    
-
-    <!-- Implementation -->
-    <source-file src="src/ios/OneSignal.m" />
-    <source-file src="src/ios/OneSignalHTTPClient.m" />
-    <source-file src="src/ios/OneSignalTrackIAP.m" />
-    <source-file src="src/ios/OneSignalJailbreakDetection.m" />
-    <source-file src="src/ios/OneSignalReachability.m" />
-    <source-file src="src/ios/OneSignalMobileProvision.m" />
-    <source-file src="src/ios/OneSignalLocation.m" />
-    <source-file src="src/ios/OneSignalAlertViewDelegate.m" />
-    <source-file src="src/ios/OneSignalTracker.m" />
-    <source-file src="src/ios/OneSignalHelper.m" />
-    <source-file src="src/ios/OneSignalWebView.m" />
-    <source-file src="src/ios/OneSignalPush.m" />
-    <source-file src="src/ios/OneSignalSelectorHelpers.m" />
-    <source-file src="src/ios/UNUserNotificationCenter+OneSignal.m" />
-    <source-file src="src/ios/UIApplicationDelegate+OneSignal.m" />
-
-    <header-file src="src/ios/OneSignal-Prefix.pch" />
-
-  </platform>
   
+	<dependency id="cordova-plugin-zip" version="2.1.0" />
+	<dependency id="cordova-plugin-fastrde-md5" version="0.2.0" />	
 
-  </plugin>
-
+	<js-module src="www/downloader.min.js" name="downloader">
+		<clobbers target="downloader" />
+	</js-module>
+</plugin>
