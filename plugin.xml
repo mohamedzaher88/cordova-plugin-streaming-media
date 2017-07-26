@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-fastrde-downloader" version="0.2.1">
+
+
+   <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-fastrde-downloader"
+    version="0.2.1">
+	
 	<name>Downloader</name>
 	<author>Fabian Strachanski</author>
 	<description>Downloads files to persistant Storage on your Phone, checks md5sum if you want, unzips packed files if necassary (For Android and iOS)</description>
